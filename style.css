@@ -1,12 +1,16 @@
 body{
     margin: 0;
-   
-font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.71) 100%);
+
+min-height: 100vh;
 
 }
-.page{ width: 1000px;
-border: 1px;
-margin: 65px auto 0 ;
+.page{ width: 1280px;
+    height: 720px;
+border: 1px ;
+margin: 0 auto;
+padding-top: 65px;
 
 
 }
@@ -49,10 +53,13 @@ ul li a{
     text-decoration: none; 
     color: #1F1534;
 }
+ul li a{
+    opacity: 50%;
+}
 
 ul li a:hover{
 font-weight: bold;
-
+opacity: 1;
 }
 
 section p{ margin: 40px 0;
@@ -66,17 +73,19 @@ font-family: 'Open Sans', sans-serif;
 background:  #69B99D;
 color: white;
 border: #69B99D;
+
 display: inline-flex;
-height: 56px;
 padding: 14px 32px 15px 32px;
 justify-content: center;
 align-items: center;
 gap: 10px;
-border-radius: 4px ;
+border-radius: 4px;
+
+cursor: pointer; /* A seta do mouse se tornará uma maozinha quando passar por cima desse botão */
 }
 button:hover{
 transition: 0.2s;
-background: #439377;
+background: #509d82;
 
 }
 
@@ -97,6 +106,7 @@ main{
   justify-content: space-between; /*  ou eu poderia separar os elementos usando o "gap", mas o justify-content:space-between tb separa os elementos  */
 }
 #balls{
-  margin-left: 100%;
-margin-top: 100%;
+ position: fixed;
+ right: 0;
+ bottom: 0;
 }
